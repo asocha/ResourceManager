@@ -134,7 +134,7 @@ unusable:
  * @param resource  the resource to remove
  */
 void deleteResource(vector<Node*>& resources, string resource){
-    Node* correspondingNode;
+    Node* correspondingNode = 0;
     for (int i = 0; i < resources.size(); i++){
         if (resources[i]->getResource() == resource){
             //delete the resource's node
